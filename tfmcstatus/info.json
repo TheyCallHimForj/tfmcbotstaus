@@ -1,0 +1,11 @@
+{
+    "author": ["YourName"],
+    "bot_version": [3, 5, 0],
+    "description": "A Redbot cog to manage TFMC bot status",
+    "hidden": true,
+    "install_msg": "TFMCStatus cog installed",
+    "name": "TFMCStatus",
+    "requirements": [],
+    "short": "TFMC status cog",
+    "tags": ["staus", "joke", "tfmc"]
+}
