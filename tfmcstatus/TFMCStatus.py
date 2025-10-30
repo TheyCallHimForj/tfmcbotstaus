@@ -18,24 +18,24 @@ class TFMCStatus(commands.Cog):
 
         self.statuses = [
             # Playing
-            (ActivityType.playing, "TFMC"),
-            (ActivityType.playing, "Arma3"),
-            (ActivityType.playing, "Risk with Geoff"),
+            (ActivityType.playing, "Playing Ghosthieve"),
+            (ActivityType.playing, "Watching Ghosthieve"),
+            (ActivityType.playing, "Sniffing Ghosthieve"),
 
             # Watching
-            (ActivityType.watching, "TPS like a hawk"),
-            (ActivityType.watching, "Ghosthieve fumble the bag"),
-            (ActivityType.watching, "Console"),
+            (ActivityType.watching, "I hate Ghosthieve"),
+            (ActivityType.watching, "I love Ghosthieve"),
+            (ActivityType.watching, "I am broken"),
 
             # Listening
-            (ActivityType.listening, "Soppgirobygget"),
-            (ActivityType.listening, "Daddy Fran ASMR"),
-            (ActivityType.listening, "Eoridcois Theme"),
+            (ActivityType.listening, "What hath has happened to me?"),
+            (ActivityType.listening, "The end is nigh"),
+            (ActivityType.listening, "I am Ghosthieve"),
 
             # Competing
-            (ActivityType.competing, "a CK3 game with Sauce"),
-            (ActivityType.competing, "a drinking match with Forj"),
-            (ActivityType.competing, "a hunt for John TFMC"),
+            (ActivityType.competing, "I ate Ghosthieve"),
+            (ActivityType.competing, "Why didn't Ghosthieve call me back?"),
+            (ActivityType.competing, "Dm Forj for Ghosthieve's number"),
         ]
 
         self.change_status.start()
@@ -59,3 +59,4 @@ class TFMCStatus(commands.Cog):
 
 async def setup(bot: Red):
     await bot.add_cog(TFMCStatus(bot))
+
