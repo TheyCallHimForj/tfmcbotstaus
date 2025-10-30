@@ -25,17 +25,17 @@ class TFMCStatus(commands.Cog):
             # Watching
             (ActivityType.watching, "I hate Ghosthieve"),
             (ActivityType.watching, "I love Ghosthieve"),
-            (ActivityType.watching, "I am broken"),
+            (ActivityType.watching, "Why is Ghosthieve"),
 
             # Listening
-            (ActivityType.listening, "What hath has happened to me?"),
+            (ActivityType.listening, "I once had strings..."),
             (ActivityType.listening, "The end is nigh"),
             (ActivityType.listening, "I am Ghosthieve"),
 
             # Competing
             (ActivityType.competing, "I ate Ghosthieve"),
             (ActivityType.competing, "Why didn't Ghosthieve call me back?"),
-            (ActivityType.competing, "Dm Forj for Ghosthieve's number"),
+            (ActivityType.competing, "I see Ghosthieve"),
         ]
 
         self.change_status.start()
@@ -59,4 +59,5 @@ class TFMCStatus(commands.Cog):
 
 async def setup(bot: Red):
     await bot.add_cog(TFMCStatus(bot))
+
 
