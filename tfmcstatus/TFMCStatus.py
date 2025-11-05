@@ -18,24 +18,24 @@ class TFMCStatus(commands.Cog):
 
         self.statuses = [
             # Playing
-            (ActivityType.playing, "Playing Ghosthieve"),
-            (ActivityType.playing, "Watching Ghosthieve"),
-            (ActivityType.playing, "Sniffing Ghosthieve"),
+            (ActivityType.playing, "Emailing Shaum K"),
+            (ActivityType.playing, "Banning Aneesh"),
+            (ActivityType.playing, "Enjoying #artworks"),
 
             # Watching
-            (ActivityType.watching, "I hate Ghosthieve"),
-            (ActivityType.watching, "I love Ghosthieve"),
-            (ActivityType.watching, "Why is Ghosthieve"),
+            (ActivityType.watching, "Kissing Fran 😘"),
+            (ActivityType.watching, "Watching LOTR"),
+            (ActivityType.watching, "👀 Watching you"),
 
             # Listening
-            (ActivityType.listening, "I once had strings..."),
-            (ActivityType.listening, "The end is nigh"),
-            (ActivityType.listening, "I am Ghosthieve"),
+            (ActivityType.listening, "Eating moss 😋"),
+            (ActivityType.listening, "🐛 Bug Fixing"),
+            (ActivityType.listening, "Reading Tickets 😞"),
 
             # Competing
-            (ActivityType.competing, "I ate Ghosthieve"),
-            (ActivityType.competing, "Why didn't Ghosthieve call me back?"),
-            (ActivityType.competing, "I see Ghosthieve"),
+            (ActivityType.competing, "🥺 Waiting for a new YT upload"),
+            (ActivityType.competing, "Twiddling my thumbs"),
+            (ActivityType.competing, "Studying World Lore 🧙‍♂️"),
         ]
 
         self.change_status.start()
@@ -43,7 +43,7 @@ class TFMCStatus(commands.Cog):
     def cog_unload(self):
         self.change_status.cancel()
 
-    @tasks.loop(minutes=5.0)
+    @tasks.loop(minutes=3.0)
     async def change_status(self):
         activity_type, name = random.choice(self.statuses)
         activity = Activity(type=activity_type, name=name)
@@ -59,5 +59,6 @@ class TFMCStatus(commands.Cog):
 
 async def setup(bot: Red):
     await bot.add_cog(TFMCStatus(bot))
+
 
 
