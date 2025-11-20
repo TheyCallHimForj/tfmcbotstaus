@@ -21,21 +21,25 @@ class TFMCStatus(commands.Cog):
             (ActivityType.playing, "Emailing Shaum K"),
             (ActivityType.playing, "Banning Aneesh"),
             (ActivityType.playing, "Enjoying #artworks"),
+            (ActivityType.playing, "Mogging Plathou"),
 
             # Watching
             (ActivityType.watching, "Kissing Fran 😘"),
             (ActivityType.watching, "Watching LOTR"),
             (ActivityType.watching, "👀 Watching you"),
+            (ActivityType.watching, "Why is Arch so short? 🤔"),
 
             # Listening
             (ActivityType.listening, "Eating moss 😋"),
             (ActivityType.listening, "🐛 Bug Fixing"),
             (ActivityType.listening, "Reading Tickets 😞"),
+            (ActivityType.listening, "I AM QUITE HUNGRY!!"),
 
             # Competing
             (ActivityType.competing, "🥺 Waiting for a new YT upload"),
             (ActivityType.competing, "Twiddling my thumbs"),
             (ActivityType.competing, "Studying World Lore 🧙‍♂️"),
+            (ActivityType.competing, "To The Task! ⚔️"),
         ]
 
         self.change_status.start()
@@ -59,6 +63,7 @@ class TFMCStatus(commands.Cog):
 
 async def setup(bot: Red):
     await bot.add_cog(TFMCStatus(bot))
+
 
 
 
